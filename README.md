@@ -1,12 +1,13 @@
 # Language_Analytics_Assignment_3
 ## ------ SCRIPT DESCRIPTION ------
-This repository contains a script that takes the dataset "fake_or_real_news.csv" and create a new dataset with either the Fake or Real news polarity and named entities. Furthermore, if the user wishes the script will print the top X named entities.
+This repository contains a script that takes either a directory full of edgelists or a single edgelist, and produces a table showing relevant information for each node plus a simple visualisation.  
 
 The script will:
-- Create a new .csv file with either the Real or fake news.
-- Append each articles polarity and named entities
-- Print the top X* named entities in the terminal. 
-   - '*' Specified by the user
+- Take either a single edgelist in a .csv file, or a whole directory of them.
+- Saves a .csv table containing each nodes: name, degree, betweenness centrality and eigenvector_centrality 
+- Saves a plot containing a simple visualisation of the edgelist network. 
+
+If a whole directory is given, it will create a table and plot for each file.
 
 ## ------ METHODS ------
 
@@ -21,10 +22,10 @@ The data was obtained through the language analytics course.
 - This folder contains the .py script.
 
 "in" FOLDER:
-- This is where the data used in the scripts should be placed. Ie. where the "fake_or_real_news.csv" should be placed.
+- This is where the data used in the scripts should be placed. Ie. where the either the directory of edgelists or a single edgelist should be placed.
 
 "out" FOLDER:
-- This is where the new .csv files will be placed.
+- This is where the new .csv and plots files will be placed. The plots will be placed in the "tables" subfolder and the plots in the "plots" subfolder.
 
 "utils" FOLDER:
 - This folder should include all utility scripts used by the main script.
@@ -35,13 +36,7 @@ The data was obtained through the language analytics course.
 **Required**
 Argument         | What it specifies / does
 ---------------- | -------------------------
-"-l" / "--label" | The name of the label you want to use the script on. Ie. "FAKE" or "REAL"
-
-**Optional**
-Argument         | What it specifies / does
----------------- | -------------------------
-"-o" / "--output" | The filepath to the place you want to place the new .csv file in (without the output filename). If none is given the file will be outputted to the "out" folder.
-"-t" / "--top" | How many of the top named entities to be printed. Ex. if given 5, the top five most common entities will be printed in the terminal
+"-f" / "--file" | Name of file or directory in the "out" folder to be used by the script.
 
 ## ------ RESULTS ------
-The model achieves what it sets out to do. However, the structure of the script means that it will have to be run twice to get the new results for both the fake and real news.
+The model achieves what it sets out to do. Although the user is not able to set custom names for the output tables and plots.
