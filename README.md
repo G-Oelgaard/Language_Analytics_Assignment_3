@@ -13,9 +13,7 @@ If a whole directory is given, it will create a table and plot for each file.
 
 
 ## ------ DATA ------
-The data is a .csv file containing around 6335 fake and real news articles divided into the columns "title", "text" and "label".
-
-The data was obtained through the language analytics course.
+The data should be a .csv file containing each nodes "source", "type", "target" and "weight" 
 
 ## ------ REPO STRUCTURE ------
 "src" FOLDER:
