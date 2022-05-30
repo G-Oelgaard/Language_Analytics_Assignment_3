@@ -34,4 +34,4 @@ Argument         | What it specifies / does
 "-f" / "--file" | Name of file or directory in the "out" folder to be used by the script.
 
 ## ------ RESULTS ------
-The model achieves what it sets out to do. Although the user is not able to set custom names for the output tables and plots.
+The script achieves what it sets out to do. Although the user is not able to set custom names for the output tables and plots.
