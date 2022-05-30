@@ -9,9 +9,6 @@ The script will:
 
 If a whole directory is given, it will create a table and plot for each file.
 
-## ------ METHODS ------
-
-
 ## ------ DATA ------
 The data should be a .csv file containing each nodes "source", "type", "target" and "weight" 
 
